@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/c7586a5965.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&family=Source+Serif+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewerly Hall</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a class="logo" href="#">JEWERLY HALL</a>
+            <nav class="menu">
+                <a class="menu-item" href="#shop-items">Каталог</a>
+                <a class="menu-item" href="#c">Контакты</a>
+                <a class="menu-item" href="#footer">О нас</a>
+            </nav>
+
+            <div class="site-search">
+                <input type="search" id="search-input">
+                <button type="button" id="search-btn" class="fa fa-search"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="filters">
+            <div class="filters-sort">
+                <label for="sort">Сортировать:</label>
+                <div class="select-wrapper">
+                    <select name="sort" id="sort" class="select">
+                        <option selected value="alphabet">По алфавиту</option>
+                        <option value="expensive">Сначала дорогие</option>
+                        <option value="cheap">Сначала дешевые</option>
+                    </select>
+                </div>
+            </div>
+
+            <section id="items-container">
+            </section>
+
+            <p id="nothing-found">По вашему запросу ничего не найдено</p>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a class="logo" href="#">JEWERLY HALL</a>
+            <div>
+                <p>Контакты:</p>
+                <ul class="info-list">
+                    <li class="info-list__items"><a class="info-list__link" href="tel:+11234567890">+1 123 456 78 90</a>
+                    </li>
+                    <li class="info-list__items"><a class="info-list__link"
+                            href="mailto:agate@yandex.com">jewerlyhall@yandex.com</a></li>
+                    <li class="info-list__items">
+                        <p>г.Минск, Комсомольская 19</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <template id="item-template">
+        <div class="shop-item">
+            <img src="">
+            <div class="content">
+                <h1></h1>
+                <p></p>
+                <span class="price"></span>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
